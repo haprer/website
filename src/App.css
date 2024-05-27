@@ -8,6 +8,9 @@
   --accent3-pal: #B8336A;
   background-color: var(--grey-pal);
   color: var(--accent2-pal);
+
+
+  
 }
 
 /* make all links on this page use --accent3-pal color */
