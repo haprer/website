@@ -1,46 +1,61 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+
+:root {
+  --dark-pal: #1B1422;
+  --grey-pal: #C4BBB8;
+  --accent1-pal: #136F63;
+  --accent2-pal: #22AAA1;
+  --accent3-pal: #B8336A;
+  background-color: var(--grey-pal);
+  color: var(--accent2-pal);
+}
+
+/* make all links on this page use --accent3-pal color */
+a {
+  color: var(--accent3-pal);
+}
+
+body, html { 
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  /* Ensure no overflow on body */
+  overflow: hidden;
+  height: 100%;
 }
 
 h1 {
-  color: black;
+  color: var(--dark-pal);
+} 
+
+/* Hide scrollbars for Webkit browsers */
+body::-webkit-scrollbar {
+  display: none;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Hide scrollbars for Firefox */
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.parallaxLayer{
+  align-items: center;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center justify the text horizontally */
+  width: 100%;
+  border-radius: 10px;
+  border-color: #136F63;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+#links {
+  background-color: var(--grey-pal);
+  color: var(--accent1-pal);
+  align-self: flex-start;
 }
