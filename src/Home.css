@@ -32,3 +32,15 @@ body {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
 }
+
+
+#links { 
+    background-color: var(--light-pal);
+}
+
+a:visited {
+  color: var(--accent2-pal);
+}
+a {
+  color: var(--accent3-pal);
+}

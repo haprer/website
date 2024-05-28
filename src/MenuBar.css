@@ -1,0 +1,53 @@
+/* MenuBar.css */
+
+@import "./Vars.css";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    color: var(--light-pal);
+    background-color: var(--dark-pal);
+    /* display: flex;
+    flex-direction: row; */
+    margin: 0;
+}
+
+.menu-bar {
+    background-color: var(--dark-pal);
+    padding: 1rem;
+    margin: 0;
+}
+  
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+  
+.menu-item {
+    padding: 0.5rem 1rem;
+}
+
+.menu-item a {
+    color: var(--light-pal);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    font-weight: bold;
+}
+
+.menu-item a:visited {
+    color: var(--light-pal);
+}
+
+.menu-item a:hover {
+    background-color: var(--accent3-pal);
+}
