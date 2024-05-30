@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './Home.css';
-import './Vars.css';
+import '../Vars.css';
 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
@@ -24,7 +24,7 @@ function Home() {
         speed={0}
       >
         <div>
-          <h1>Harper Sullivan</h1>
+          <h1>Sullivan</h1>
         </div>
       </ParallaxLayer>
       <ParallaxLayer offset={.5} speed={1} className="parallaxLayer">
