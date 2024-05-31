@@ -16,6 +16,14 @@ const theme = createTheme({
             },
         },
     },
+    MuiList: {
+        styleOverrides: {
+            root: {
+                backgroundColor: gunmetal, 
+                borderRadius: '10px',
+            },
+        },
+    },
     MuiListItemText: {
         styleOverrides: {
             secondary: {
