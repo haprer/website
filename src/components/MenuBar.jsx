@@ -5,10 +5,11 @@ import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
+import { aliceWhite } from '../theme';
 
 function MenuBar({ routes }) {
   return (
-    <AppBar position="static">
+    <AppBar display="flex" position="static" sx={{ width: '100%'}}>
       <Toolbar>
       <Typography
             variant="h6"
@@ -21,15 +22,19 @@ function MenuBar({ routes }) {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: aliceWhite,
               textDecoration: 'none',
             }}
           >
-            LOGO
+            Harper
           </Typography>
         <Box sx={{ display: 'flex' }}>
           {routes.map((route, index) => (
-            <Button key={index} component={Link} to={route.path} color="inherit" sx={{ mr: 2 }}>
+            <Button key={index} component={Link} to={route.path} color='primary' 
+              sx={{ 
+                mr: 2,
+                color: aliceWhite,
+                }}>
               {route.name}
             </Button>
           ))}
