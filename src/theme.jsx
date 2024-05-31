@@ -8,15 +8,22 @@ export const aliceWhite = '#E8F0FF';
 const theme = createTheme({
   components: {
     MuiAppBar: {
-    styleOverrides: {
-        root: {
-        // Custom styles for the AppBar
-            width: '100%',
-            color: aliceWhite,
+        styleOverrides: {
+            root: {
+            // Custom styles for the AppBar
+                width: '100%',
+                color: aliceWhite,
+            },
         },
     },
+    MuiListItemText: {
+        styleOverrides: {
+            secondary: {
+                color: lightGreen,   //use secondary text as accent color
+            },
+        },
     },
-},
+  },
   palette: {
     primary: {
       main: gunmetal,
@@ -24,10 +31,15 @@ const theme = createTheme({
       dark: periwinkle,
       contrastText: lightGreen,
     },
+    secondary: {
+        main: gunmetal,
+        light: aliceWhite,
+        dark: periwinkle,
+        contrastText: lightGreen, // Use your color here
+    },
+  
 
   }
-}
-
-);
+});
 
 export default theme;

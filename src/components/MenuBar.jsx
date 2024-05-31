@@ -26,7 +26,7 @@ function MenuBar({ routes }) {
               textDecoration: 'none',
             }}
           >
-            Harper
+            Harper :)
           </Typography>
         <Box sx={{ display: 'flex' }}>
           {routes.map((route, index) => (
