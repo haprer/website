@@ -21,7 +21,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Router>
         <MenuBar routes={routes} />
-        <main style={{overflow: "hidden"}}> {/* Add padding-top to main content */}
+        <main style={{overflow: "hidden"}}>
           <Routes>
             {routes.map((route, index) => (
               <Route key={index} path={route.path} element={<route.component />} />
