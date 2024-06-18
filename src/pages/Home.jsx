@@ -10,6 +10,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import {List, ListItem, ListItemButton, ListItemAvatar, ListItemText, Avatar} from '@mui/material';
 import { Link } from 'react-router-dom';
+import PrimeCarousel from '../components/PrimeCarousel';
 
 
 const hoverColor = 'rgba(0,0,0,0.3)'; 
@@ -64,7 +65,7 @@ function Home() {
           <Grid container spacing={2} style={{ flexGrow: 1,}} sx={{ margin: '16px', justifyContent: 'center', alignItems: 'center' }}>
             <Grid item xs={12} md={8}>
               <h1>Place Holder for Carousel</h1>
-              <p>The Carousel element of pages will go here</p>
+              {PrimeCarousel()}
             </Grid>
             <Grid item xs={12} md={4}>
               {LinksList()}
