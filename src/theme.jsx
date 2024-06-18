@@ -38,6 +38,15 @@ const theme = createTheme({
                 },
             },
         },
+        MuiGrid: {
+            styleOverrides: {
+                root: {
+                    borderWidth: '1px',
+                    borderColor: "#ff0000",
+                    padding: '16px',
+                },
+            },
+        },
     },
     palette: {
         primary: {
