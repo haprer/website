@@ -5,7 +5,7 @@
 import { Menubar } from 'primereact/menubar';
 
 /** My Pages */
-import Home from './pages/home';
+import Home from './pages/home.jsx';
 
 /** React Imports */
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
