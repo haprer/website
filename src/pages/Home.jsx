@@ -2,6 +2,7 @@
 /** Primereact Components */
 import { Menu } from 'primereact/menu';
 import {Accordion, AccordionTab} from 'primereact/accordion';
+import { Divider } from 'primereact/divider';
 
 /** CSS imports */
 import './home.css';
@@ -13,8 +14,9 @@ function QuestionAccordian() {
             <AccordionTab header="Can I hire you?">
                 <p className="m-0">
                     Yes! I am looking for a job as a software engineer. I am a full stack developer with experience in Spring, C# .Net, React, AWS, and more. 
-                    Please email me about your position at <a href="mailto:harpersullivan00@gmail.com">harpersullivan00@gmail.com</a>. Bonus points if you have a cool office, 
-                    and even more if it is in Europe. 
+                    Please email me about your position at <a href="mailto:harpersullivan00@gmail.com">harpersullivan00@gmail.com</a>. 
+                    <br />
+                    Bonus points if you have a cool office, and extra if it&apos;s in Europe. 
                 </p>
             </AccordionTab>
             <AccordionTab header="Header II">
@@ -79,6 +81,7 @@ export default function Home() {
                 <h1>Website Website Website</h1>
                 <Menu model={items}></Menu>
             </div>
+            <Divider></Divider>
             {QuestionAccordian()}
         </div>
     );

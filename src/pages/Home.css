@@ -11,7 +11,7 @@
 .home-page {
     display: flex;
     flex-direction: column;
-    gap: 10vw;
+    gap: 30px;
     margin-top: 5vh;
     justify-content: center;
 }
