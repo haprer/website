@@ -1,92 +1,31 @@
-import './Home.css';
-import '../Vars.css';
-import theme from '../theme';
 
+/** Primereact Components */
+import { Menu } from 'primereact/menu';
 
-import { ThemeProvider } from '@mui/material/styles';
-import { periwinkle, gunmetal, aliceWhite, lightGreen } from '../theme';
-import { Grid, Box, Paper } from '@mui/material';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import {List, ListItem, ListItemButton, ListItemAvatar, ListItemText, Avatar} from '@mui/material';
-import { Link } from 'react-router-dom';
-import PrimeCarousel from '../components/PrimeCarousel';
+/** CSS imports */
+import './home.css';
 
+export default function Home() {
 
-const hoverColor = 'rgba(0,0,0,0.3)'; 
+    let items = [
+        { 
+            label: (
+                <div>
+                    <span className="main-text">Harper on Github</span>
+                    <br />
+                    <span className="sub-text">https://github.com/haprer</span>
+                </div>
+            ),
+            icon: 'pi pi-github', className: 'custom-icon', url: 'https://github.com/haprer',
 
+        },
+        { label: 'Search', icon: 'pi pi-linkedin', className: 'custom-icon' }
+    ];
 
-function LinksList() { 
-  return (
-    <List sx={{ width: '100%', maxWidth: 360, minWidth: 300, color: aliceWhite, maxHeight: "auto", overflow: "hidden"}}>
-          
-    <ListItemButton component={Link} to="https://github.com/haprer" sx={{":hover": {backgroundColor:hoverColor}, color: aliceWhite}}>
-      <ListItemAvatar>
-        <Avatar>
-          <GitHubIcon />
-        </Avatar>
-      </ListItemAvatar>
-      <ListItemText primary="Harper on Github" secondary="https://github.com/haprer"/>
-    </ListItemButton>
-
-    <ListItemButton component={Link} to="https://github.com/clifton4" sx={{":hover": {backgroundColor:hoverColor}}}>
-    <ListItemAvatar>
-        <Avatar>
-          <GitHubIcon />
-        </Avatar>
-      </ListItemAvatar>
-      <ListItemText primary="Clifton on Github" secondary="https://github.com/clifton4"/>
-    </ListItemButton>
-
-    <ListItemButton component={Link} to="https://www.linkedin.com/in/clifton-sullivan-abb374291" sx={{":hover": {backgroundColor:hoverColor}}}>
-    <ListItemAvatar>
-        <Avatar>
-          <LinkedInIcon />
-        </Avatar>
-      </ListItemAvatar>
-      <ListItemText primary="Linked In" secondary="www.linkedin.com/in/clifton-sullivan-abb374291"/>
-    </ListItemButton>
-
-
-  </List>
-  );
-}
-
-function Home() {
-
-  const gridStyle = {display: "flex", flexGrow: "1", height: "100%"};
-
-  return (
-    <ThemeProvider theme={theme}>
-
-      <div id="home" style={{ flex: '1', flexGrow: "1", width: '80vw', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', flexGrow: "1"}}>
-
-          <h1>Check out my profiles:</h1>
-
-          {/* <Grid container spacing={2} style={{ flexGrow: 1}} sx={{ margin: '16px', justifyContent: 'center', alignItems: 'center' }}>
-            <Grid item xs={12} md={8}>
-              <h1>Place Holder for Carousel</h1>
-              {PrimeCarousel()}
-            </Grid>
-            <Grid item xs={12} md={4}>
-              {LinksList()}
-            </Grid>
-          </Grid> */}
-          <Grid container spacing={2} style={{ flexGrow: 1, width: "80vw"}} sx={{ margin: '16px', justifyContent: 'center', alignItems: 'center' }}>
-            <Grid item xs={12} md={8} style={gridStyle}>
-              {/* {PrimeCarousel()} */}
-              <h1>PlaceHolder</h1>
-            </Grid>
-            <Grid item xs={12} md={4} style={gridStyle}>
-              {LinksList()}
-            </Grid>
-          </Grid>
+    return (
+        <div className='home-page'>
+            <h1>Website Website Website</h1>
+            <Menu model={items}></Menu>
         </div>
-      </div>
-    </ThemeProvider>
-  );
+    );
 }
-
-
-export default Home

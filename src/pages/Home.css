@@ -1,15 +1,51 @@
 
-@import '../Vars.css';
+.home-page {
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+    margin-top: 5vh
+}
 
 
-#home { 
+.custom-icon .pi {
+    color: #bebebe; /* Change the color to red */
+    font-size: 3rem;
+}
+
+
+.home-page .p-menu {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    gap: 10px;
+    width: fit-content;
 }
 
-#home h1 {
-    margin-bottom: 1rem;
+.home-page .p-menuitem-link {
+    display: flex;
+    white-space: normal !important;
 }
+
+.home-page .p-menuitem-content {
+    display: flex;
+    flex-grow: 1;
+    box-sizing: content-box;
+}
+
+.home-page .p-menuitem-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+
+
+
+.home-page .main-text {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.home-page .sub-text {
+    font-size: 0.85em;
+    color: rgb(44, 172, 61);
+}
+
