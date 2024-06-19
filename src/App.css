@@ -1,4 +1,7 @@
 
+:root {
+  --menubar-color: #292533;
+}
 
 body, html, #root {
   display: flex;
@@ -31,21 +34,23 @@ body {
 }
 
 #topBar {
-  background-color: #0c110c;
+  background-color: var(--menubar-color);
   padding: 0;
   margin: 0;
+  border: none;
+  border-radius: 0;
 }
 
 /* Change the background color of the Menubar */
 #topBar.p-menubar, #topBar.p-menubar > .p-menuitem	 {
-  background-color: #0c110c; 
+  background-color: var(--menubar-color); 
 }
 
 .top-level .p-menubar .p-submenu-list {
-  background-color: #0c110c;
-  border-color: #0c110c;
+  background-color: var(--menubar-color);
+  border-color: var(--menubar-color);
 }
 
 .top-level .p-menubar .p-menuitem-link {
-  background-color: #0c110c;
+  background-color: var(--menubar-color);
 }
