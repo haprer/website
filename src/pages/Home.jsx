@@ -5,7 +5,7 @@ import {Accordion, AccordionTab} from 'primereact/accordion';
 import { Divider } from 'primereact/divider';
 
 /** CSS imports */
-import './home.css';
+import './Home.css';
 
 
 function QuestionAccordian() { 
