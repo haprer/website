@@ -36,6 +36,7 @@ body {
 #topBar {
   background-color: var(--menubar-color);
   padding: 0;
+  padding-left: 2%;
   margin: 0;
   border: none;
   border-radius: 0;

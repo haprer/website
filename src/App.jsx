@@ -6,6 +6,7 @@ import { Menubar } from 'primereact/menubar';
 
 /** My Pages */
 import Home from './pages/Home.jsx';
+import Mantaray from './pages/Mantaray.jsx';
 
 /** React Imports */
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -19,52 +20,55 @@ import 'primereact/resources/themes/lara-dark-purple/theme.css';
 const topBarItems = [
   {
       label: 'Home',
-      icon: 'pi pi-home'
+      icon: 'pi pi-home',
+      url: '/'
   },
   {
-      label: 'Features',
-      icon: 'pi pi-star'
-  },
-  {
-      label: 'Projects',
-      icon: 'pi pi-search',
+      label: 'Work Experience',
+      icon: 'pi pi-briefcase',
       items: [
-          {
-              label: 'Components',
-              icon: 'pi pi-bolt'
-          },
-          {
-              label: 'Blocks',
-              icon: 'pi pi-server'
-          },
-          {
-              label: 'UI Kit',
-              icon: 'pi pi-pencil'
-          },
-          {
-              label: 'Templates',
-              icon: 'pi pi-palette',
-              items: [
-                  {
-                      label: 'Apollo',
-                      icon: 'pi pi-palette'
-                  },
-                  {
-                      label: 'Ultima',
-                      icon: 'pi pi-palette'
-                  }
-              ]
-          }
+            {
+                label: 'Mantaray',
+                icon: 'pi pi-briefcase',
+                url: '/mantaray'
+            },
+            {
+                label: 'Orion ECI.',
+                icon: 'pi pi-briefcase',
+                url: 'https://orioneci.com/infinity-software/'
+            },
       ]
   },
   {
-      label: 'Contact',
-      icon: 'pi pi-envelope'
-  }
+      label: 'Projects',
+      icon: 'pi pi-hammer',
+      items: [
+          {
+              label: 'State.io Remake',
+              icon: 'pi pi-bolt',
+              url: 'https://github.com/haprer/stateioremake'
+          },
+          {
+              label: 'This Website',
+              icon: 'pi pi-server',
+              url: 'https://github.com/haprer/website'
+          },
+          {
+            label: 'Kingdoms.io',
+            icon: 'pi pi-star',
+            url: 'https://github.com/haprer/io-kingdoms'
+          },
+          {
+              label: 'Chess Game',
+              icon: 'pi pi-crown',
+              url: 'https://github.com/clifton4/ChessGame'
+          },
+      ]
+  },
 ];
 
 
-const start = <h1>Harper :)</h1>;
+const start = <h1>Harper 😄</h1>;
 
 function App() {
   
@@ -76,6 +80,7 @@ function App() {
             <div className='main-window'>
                 <Routes>
                     <Route path = '/' Component={Home} />
+                    <Route path = '/mantaray' Component={Mantaray} />
                 </Routes>
             </div>
         </Router>

@@ -63,8 +63,8 @@
 
 /* Accordian settings */
 .home-page .p-accordion {
-    width: 70vw; 
-    max-width: 70vw; 
+    width: 90vw; 
+    max-width: 90vw; 
 }
 .home-page .p-accordion .p-accordion-header {
     background-color: var(--accordion-background); /* Custom background color for Accordion headers */
