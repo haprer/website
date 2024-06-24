@@ -44,7 +44,7 @@ function QuestionAccordian() {
 const carouselItems = [ 
     {
         title: "Ocean Robotics",
-        image: "src/assets/mantaray/mv-test-1.jpg",
+        image: "/assets/mantaray/mv-test-1.jpg",
         description: "My work on the ASV/UUV project at UNH MantaRay.",
         link: "/mantaray"
     },
