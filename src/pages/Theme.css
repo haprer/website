@@ -1,0 +1,13 @@
+:root { 
+    --root-text-color: #01273e;
+    --root-background-color: #f5f5f5;
+    --root-green-highlight-text: rgb(44, 172, 61); 
+
+    --accordion-background: #f5f5f5;
+    --accordion-color: #465046;
+    --accordion-hover-background: #918d8d;
+    --accordion-hover-color: #656eeb;
+
+    --green-text-color:  rgb(44, 172, 61);
+    --menu-icon-color: #bebebe; 
+}

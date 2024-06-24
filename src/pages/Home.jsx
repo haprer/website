@@ -3,6 +3,11 @@
 import { Menu } from 'primereact/menu';
 import {Accordion, AccordionTab} from 'primereact/accordion';
 import { Divider } from 'primereact/divider';
+import { Carousel } from 'primereact/carousel';
+import { Link } from 'react-router-dom';
+import { Card } from 'primereact/card';
+
+
 
 /** CSS imports */
 import './Home.css';
@@ -33,6 +38,54 @@ function QuestionAccordian() {
                 </p>
             </AccordionTab>
         </Accordion>
+    );
+}
+
+const carouselItems = [ 
+    {
+        title: "Ocean Robotics",
+        image: "src/assets/mantaray/mv-test-1.jpg",
+        description: "My work on the ASV/UUV project at UNH MantaRay.",
+        link: "/mantaray"
+    },
+    {
+        title: "State.io Remake",
+        image: "",
+        description: "My remake of the game State.io to learn PhaserJS.",
+        link: ""
+    },
+    {
+        title: "This website",
+        image: "", 
+        description: "How I made this page using primereact and",
+        link: ""
+    }
+];
+
+
+function HomeCarousel() { 
+
+    
+    const template = (item) => { 
+        return (
+            <Link to={item.link} className="carousel-link">
+                <Card className='carousel-card'>
+                    <div className='carousel-item'>
+                        <img src={item.image} alt="coming soon..." className="carousel-image" />
+                        <h1>{item.title}</h1>
+
+                        <div className="product-description">{item.description}</div>
+                    </div>
+                </Card>
+            </Link>
+        );
+    }
+
+    return (
+        <div className="carousel-demo">
+            {/* Responsive options removed */}
+            <Carousel value={carouselItems} numVisible={1} numScroll={1} autoplayInterval={5000} itemTemplate={template} circular /> 
+        </div>
     );
 }
 
@@ -75,7 +128,7 @@ export default function Home() {
     return (
         <div className='home-page'>
             <div id="layerOne">
-                <h1>Website Website Website</h1>
+                {HomeCarousel()}
                 <Menu model={items}></Menu>
             </div>
             <Divider></Divider>

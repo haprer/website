@@ -1,10 +1,6 @@
 
-:root {
-    --accordion-background: #f5f5f5;
-    --accordion-color: #465046;
-    --accordion-hover-background: #918d8d;
-    --accordion-hover-color: #656eeb;
-}
+@import url("./Theme.css");
+
 
 
 /* Page settings */
@@ -20,15 +16,16 @@
     flex-direction: row;
     gap: 5vh;
     justify-content: center;
+    align-items: center;
 }
 .home-page a {
-    color: #69c3f7;
+    color: var(--root-text-color);
 }
 
 
 /* Menu Item settings  */
 .custom-icon .pi {
-    color: #bebebe; /* Change the color to red */
+    color: var(--menu-icon-color); 
     font-size: 3rem;
 }
 .home-page .p-menu {
@@ -36,6 +33,7 @@
     flex-direction: column;
     gap: 10px;
     width: fit-content;
+    height: fit-content;
 }
 .home-page .p-menuitem-link {
     display: flex;
@@ -57,8 +55,60 @@
 }
 .home-page .sub-text {
     font-size: 0.85em;
-    color: rgb(44, 172, 61);
+    color: var(--green-text-color);
 }
+
+/* Carousel Settings */ 
+.home-page .p-carousel-next-icon, .home-page .p-carousel-prev-icon { 
+    color: #000000; 
+}
+.home-page .p-carousel-container { 
+    display: flex;
+    flex-grow: 1;
+    max-width: 60vw;
+    justify-content: center;
+    margin: 0 auto;
+}
+.home-page .carousel-link { 
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    text-align: center;
+}
+.home-page .carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+}
+.home-page .p-carousel-items-content { 
+    max-width: fit-content;
+    /* border: 1px solid gray;     */
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+.home-page .p-card { 
+    background-color: var(--root-background-color);
+    color: var(--root-text-color);
+}
+#layerOne > div.carousel-demo > div > div > div > div > div > div.p-carousel-item.p-carousel-item-active.p-carousel-item-start.p-carousel-item-end {
+   /* This is the style for the center active item on the carousel */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.home-page .carousel-image { 
+    width: 50vw;
+    height: 40vh;
+    border-radius: 3%;
+    object-fit: cover;
+}
+
+
+
 
 
 /* Accordian settings */
