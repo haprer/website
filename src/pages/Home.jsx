@@ -29,12 +29,10 @@ function QuestionAccordian() {
                     Yes, I have a Bachelor of Science in Computer Science from the University of New Hampshire. 
                 </p>
             </AccordionTab>
-            <AccordionTab header="Header III">
+            <AccordionTab header="What are your hobbies">
                 <p className="m-0">
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
-                    quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
-                    mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-                    Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+                    Aside from making software I love to cook, read, and play video games. I competed in first robotics and cross country in high school.
+                    I played competetive dota 2 in college. 
                 </p>
             </AccordionTab>
         </Accordion>
@@ -50,15 +48,15 @@ const carouselItems = [
     },
     {
         title: "State.io Remake",
-        image: "",
+        image: "/assets/stateio/dev-1.png",
         description: "My remake of the game State.io to learn PhaserJS.",
-        link: ""
+        link: "http://harper-stateio-remake-bucket.s3-website-us-east-1.amazonaws.com/"
     },
     {
         title: "This website",
         image: "", 
         description: "How I made this page using primereact and",
-        link: ""
+        link: "https://github.com/haprer/website"
     }
 ];
 
