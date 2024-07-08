@@ -1,8 +1,17 @@
+@import url("/src/pages/Theme.css");
+
+
 img { 
     max-width: 60vh;
 }
 
+
+.mantapage h1 { 
+    text-align: center;
+}
+
 .mantapage .p-card { 
+
     margin: 5vw;
 }
 
