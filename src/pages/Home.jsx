@@ -56,7 +56,7 @@ const carouselItems = [
         title: "This website",
         image: "/assets/website/home-code-1.png", 
         description: "How I made this page using primereact and",
-        link: "https://github.com/haprer/website"
+        link: "/website"
     }
 ];
 

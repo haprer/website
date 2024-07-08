@@ -7,6 +7,7 @@ import { Menubar } from 'primereact/menubar';
 /** My Pages */
 import Home from './pages/Home.jsx';
 import Mantaray from './pages/Mantaray.jsx';
+import Website from '/src/pages/Website.jsx';
 
 /** React Imports */
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -51,7 +52,7 @@ const topBarItems = [
           {
               label: 'This Website',
               icon: 'pi pi-server',
-              url: 'https://github.com/haprer/website'
+              url: '/website'
           },
           {
             label: 'Kingdoms.io',
@@ -81,6 +82,7 @@ function App() {
                 <Routes>
                     <Route path = '/' Component={Home} />
                     <Route path = '/mantaray' Component={Mantaray} />
+                    <Route path = '/website' Component={Website} />
                 </Routes>
             </div>
         </Router>
