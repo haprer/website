@@ -1,0 +1,13 @@
+img { 
+    max-width: 60vh;
+}
+
+.mantapage .p-card { 
+    margin: 5vw;
+}
+
+.mantapage .p-card-content { 
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+}
