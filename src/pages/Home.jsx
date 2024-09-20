@@ -7,6 +7,8 @@ import { Carousel } from 'primereact/carousel';
 import { Link } from 'react-router-dom';
 import { Card } from 'primereact/card';
 
+import { useState, useEffect } from 'react';
+
 
 
 /** CSS imports */
@@ -39,30 +41,34 @@ function QuestionAccordian() {
     );
 }
 
-const carouselItems = [ 
-    {
-        title: "Ocean Robotics",
-        image: "/assets/mantaray/mv-test-1.jpg",
-        description: "My work on the ASV/UUV project at UNH MantaRay.",
-        link: "/mantaray"
-    },
-    {
-        title: "State.io Remake",
-        image: "/assets/stateio/dev-1.png",
-        description: "My remake of the game State.io to learn PhaserJS.",
-        link: "http://harper-stateio-remake-bucket.s3-website-us-east-1.amazonaws.com/"
-    },
-    {
-        title: "This website",
-        image: "/assets/website/home-code-1.png", 
-        description: "How I made this page using primereact and",
-        link: "/website"
-    }
-];
-
 
 function HomeCarousel() { 
 
+    const [carouselItems, setCarouselItems] = useState([]);
+
+    useEffect(() => {
+        setCarouselItems([
+            {
+                title: "Ocean Robotics",
+                image: "/assets/mantaray/mv-test-1.jpg",
+                description: "My work on the ASV/UUV project at UNH MantaRay.",
+                link: "/mantaray"
+            },
+            {
+                title: "State.io Remake",
+                image: "/assets/stateio/dev-1.png",
+                description: "My remake of the game State.io to learn PhaserJS.",
+                link: "http://harper-stateio-remake-bucket.s3-website-us-east-1.amazonaws.com/"
+            },
+            {
+                title: "This website",
+                image: "/assets/website/home-code-1.png", 
+                description: "How I made this page using primereact and",
+                link: "/website"
+            }
+        ]);
+    }, []);
+    
     
     const template = (item) => { 
         return (
