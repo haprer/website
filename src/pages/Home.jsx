@@ -31,10 +31,16 @@ function QuestionAccordian() {
                     Yes, I have a Bachelor of Science in Computer Science from the University of New Hampshire. 
                 </p>
             </AccordionTab>
-            <AccordionTab header="What are your hobbies">
+            <AccordionTab header="Are you Clifton or Harper?">
+                <p className="m-0">
+                    Both! I am nonbinary and I use both names. Usually I prefer Harper but if you still know me as Clifton or 
+                    Clif thats cool to! 
+                </p>
+            </AccordionTab>
+            <AccordionTab header="What are your hobbies?">
                 <p className="m-0">
                     Aside from making software I love to cook, read, and play video games. I competed in first robotics and cross country in high school.
-                    I played competetive dota 2 in college. 
+                    I played competetive dota 2 in college. I also Ski and Sail when the weather is good. 
                 </p>
             </AccordionTab>
         </Accordion>
