@@ -107,10 +107,10 @@ export default function Home() {
             <div>
                 <span className="main-text">LinkedIn</span>
                 <br />
-                <span className="sub-text">https://linkedin.com/in/clifton-sullivan-abb374291</span>
+                <span className="sub-text">https://www.linkedin.com/in/harper-sullivan-abb374291/</span>
             </div>
         ), 
-        icon: 'pi pi-linkedin', className: 'custom-icon', url: 'https://linkedin.com/in/clifton-sullivan-abb374291' 
+        icon: 'pi pi-linkedin', className: 'custom-icon', url: 'https://www.linkedin.com/in/harper-sullivan-abb374291/' 
         },
         { 
             label: (
