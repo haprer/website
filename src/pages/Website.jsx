@@ -7,9 +7,13 @@ import '/src/pages/Website.css'
 const Mantaray = () => {
     return (
         <div className='websitePage'> 
-            <h2>Technology: Vite.js using Primereact components</h2>
-            <h2>CD Pipeline: Github Actions &rarr; AWS S3 &rarr; AWS Cloudfront</h2>
             <a href="https://github.com/haprer/website">View the code here</a>
+            <div>
+                <p>
+                    This website is built using React.JS, Primereact, and Vite. It is deployed using GitHub Actions, 
+                    AWS S3, and AWS Cloudfront. 
+                </p>
+            </div>
         </div>
     );
 };
